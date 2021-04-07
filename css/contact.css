@@ -1,0 +1,18 @@
+
+.gnb_logo_wrap {
+   position: fixed;
+   top: 50px;
+   left: 50%;
+   transform: translate(-50%, 0);
+   width: 74px;
+   height: 74px;
+   background-color: rgb(255, 255, 255);
+}
+.gnb_logo {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 24px;
+   height: 28px;
+}
