@@ -1,18 +1,134 @@
-
 .gnb_logo_wrap {
-   position: fixed;
-   top: 50px;
-   left: 50%;
-   transform: translate(-50%, 0);
-   width: 74px;
-   height: 74px;
-   background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 74px;
+  height: 74px;
+  background-color: rgb(255, 255, 255);
+  z-index: 1000;
 }
 .gnb_logo {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   width: 24px;
-   height: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 28px;
+}
+.hero_wrap {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/hero.jpg);
+}
+
+#hero_title {
+  position: absolute;
+  bottom: 100px;
+  left: 250px;
+  font-size: 160px;
+  font-weight: 900;
+  letter-spacing: -10px;
+}
+
+/* Let's Talk CSS */
+#talk {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.talk_wrap {
+  width: 1440px;
+  padding: 100px 10px;
+  margin: 0 auto;
+  display: flex;
+}
+.talk_left {
+  width: 33.3333%;
+}
+.talk_left_index {
+  border-top: 1px solid rgba(0, 0, 0, 0.6);
+  width: 200px;
+  font-size: 22px;
+  letter-spacing: -2px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.talk_right {
+  width: 66.6666%;
+}
+.talk_right_title {
+  width: 450px;
+  font-family: serif;
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -4px;
+  line-height: 70px;
+  margin: 0 0 46px;
+}
+#talk_form {
+  width: 100%;
+}
+#talk_name,
+#talk_email,
+#talk_company {
+  width: 100%;
+  height: 48px;
+  padding: 0 10px 17px;
+  font-family: serif;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0 0 48px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+#talk_name:focus,
+#talk_email:focus,
+#talk_company:focus {
+  outline: none;
+  border-bottom: 1px solid #3a97f5;
+}
+#talk_message {
+  width: 100%;
+  height: 96px;
+  font-family: serif;
+  font-size: 22px;
+  padding: 20px;
+  margin: 0 0 48px;
+  border-radius: 0;
+}
+#talk_message:focus {
+  outline: none;
+  border: 1px solid #3a97f5;
+}
+.talk_notice,
+.talk_notice a {
+  font-family: serif;
+  font-size: 18px;
+  color: rgb(128, 128, 128);
+  margin: 0 0 48px;
+}
+.talk_notice a {
+  text-decoration: underline;
+}
+#talk_send_btn {
+  width: 100%;
+  height: 84px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0;
+}
+.talk_name_eyebrow,
+.talk_email_eyebrow,
+.talk_company_eyebrow,
+.talk_message_eyebrow {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: serif;
+  color: #3a97f5;
+  display: none;
 }

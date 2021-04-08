@@ -1,37 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
-   <link rel="stylesheet" href="css/reset_hugeinc.css" />
-   <link rel="stylesheet" href="css/common.css" />
-   <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/reset_hugeinc.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 
-   <title>Huge Inc - Contact</title>
-</head>
-<body>
-   <header>
+    <title>Huge Inc - Contact</title>
+  </head>
+  <body>
+    <header>
       <nav class="gnb">
-         <div class="gnb_logo_wrap">
-            <svg class="gnb_logo" viewBox="0 0 20 28" xmlns="http://www.w3.org/2000/svg" title="Menu">
-               <path class="gnb-logo__path" d="M35,24H28V51h7V41h6V51h7V24H41V34H35V24Z" transform="translate(-28 -24)"></path>
-            </svg>
-         </div>
+        <div class="gnb_logo_wrap">
+          <svg
+            class="gnb_logo"
+            viewBox="0 0 20 28"
+            xmlns="http://www.w3.org/2000/svg"
+            title="Menu"
+          >
+            <path
+              class="gnb-logo__path"
+              d="M35,24H28V51h7V41h6V51h7V24H41V34H35V24Z"
+              transform="translate(-28 -24)"
+            ></path>
+          </svg>
+        </div>
       </nav>
-   </header>
+    </header>
 
-   <main>
+    <main>
+      <!-- Hero -->
       <section id="hero">
-         <div class="hero_wrap">
-            <h1 id="hero_title">Hello</h1>
-         </div>
+        <div class="hero_wrap">
+          <h1 id="hero_title">Hello.</h1>
+        </div>
       </section>
-   </main>
 
-   <footer></footer>
-</body>
+      <!-- Let's Talk -->
+      <section id="talk">
+        <div class="talk_wrap">
+          <div class="talk_left">
+            <h3 class="talk_left_index">Let's talk.</h3>
+          </div>
+          <div class="talk_right">
+            <h2 class="talk_right_title">We want to get to know you.</h2>
+            <form action="" id="talk_form">
+              <h4 class="talk_name_eyebrow">Your name</h4>
+              <input
+                id="talk_name"
+                name="userName"
+                type="text"
+                placeholder="| Your name."
+                onfocus="talkInputFocus(0)"
+              />
+              <h4 class="talk_email_eyebrow">Your email</h4>
+              <input
+                id="talk_email"
+                name="userEmail"
+                type="email"
+                placeholder="| Your email."
+              />
+              <h4 class="talk_company_eyebrow">Your company</h4>
+              <input
+                id="talk_company"
+                name="userCompany"
+                type="text"
+                placeholder="| Your company."
+              />
+              <h4 class="talk_message_eyebrow">
+                Let us know what you're looking for and how we can help.
+              </h4>
+              <textarea
+                id="talk_message"
+                name="userMessage"
+                cols="30"
+                rows="10"
+                placeholder="Let us know what you're looking for and how we can help."
+              ></textarea>
+              <p class="talk_notice">
+                Please read our <a>Privacy Policy</a> to see how we use your
+                personal information.
+              </p>
+              <button id="talk_send_btn" type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script>
+      // Hero Title Auto Change
+      var titleText = [
+        "Hello.",
+        "Hola.",
+        "Buenas.",
+        "Ola.",
+        "Ei.",
+        "你好.",
+        "E'yo.",
+        "Ello.",
+        "Aye.",
+        "안녕.",
+      ]; // 1차원 배열
+      var titleTextNum = 0;
+
+      //titleText.length; - titleText의 배열의 갯수
+
+      function titleChange() {
+        titleTextNum++; // Hello가 이미 h1에 있기 때문에 더하기 먼저 해줌!
+
+        if (titleTextNum > titleText.length - 1) {
+          titleTextNum = 0;
+        }
+
+        document.getElementById("hero_title").innerHTML =
+          titleText[titleTextNum];
+      }
+
+      var titleI = setInterval(titleChange, 1000);
+
+      // Talk Form
+      function talkInputFocus(target) {
+        document.getElementsByClassName("talk_name_eyebrow")[
+          target
+        ].style.display = "block";
+        document.getElementById("talk_name").placeholder = "";
+      }
+    </script>
+  </body>
 </html>
