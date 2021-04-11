@@ -32,6 +32,55 @@
   letter-spacing: -10px;
 }
 
+
+/* Hello CSS */
+.hello_wrap {
+  width: 1440px;
+  padding: 140px 10px 0;
+  margin: 0 auto 200px;
+  display: flex;
+}
+.hello_left {
+  width: 33.3333%;
+}
+.hello_left_index {
+  width: 200px;
+  border-top: 1px solid rgb(255, 255, 255);
+  padding: 10px 0 0;
+  font-size: 22px;
+  letter-spacing: -2px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.hello_right {
+  width: 66.6666%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hello_right_title {
+  width: 100%;
+  font-family: serif;
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -4px;
+  line-height: 70px;
+}
+.hello_right_content {
+  width: 50%;
+  margin: 100px 0 0;
+}
+.hello_right_content li {
+  font-family: serif;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.27504px;
+  font-weight: 500;
+}
+.hello_right_content li:first-child {
+  margin: 0 0 40px;
+}
+
+
 /* Let's Talk CSS */
 #talk {
   background-color: rgb(255, 255, 255);
@@ -47,8 +96,9 @@
   width: 33.3333%;
 }
 .talk_left_index {
-  border-top: 1px solid rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgb(0, 0, 0);
   width: 200px;
+  padding: 10px 0 0;
   font-size: 22px;
   letter-spacing: -2px;
   line-height: 30px;
