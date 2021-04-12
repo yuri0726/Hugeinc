@@ -83,45 +83,72 @@
             <h3 class="talk_left_index">Let's talk.</h3>
           </div>
           <div class="talk_right">
-            <h2 class="talk_right_title">We want to get to know you.</h2>
+            <h2 class="talk_right_title">We want to get to<br>know you.</h2>
             <form action="" id="talk_form">
-              <h4 class="talk_name_eyebrow">Your name</h4>
-              <input
-                id="talk_name"
-                name="userName"
-                type="text"
-                placeholder="| Your name."
-                onfocus="talkInputFocus(0)"
-              />
-              <h4 class="talk_email_eyebrow">Your email</h4>
-              <input
-                id="talk_email"
-                name="userEmail"
-                type="email"
-                placeholder="| Your email."
-              />
-              <h4 class="talk_company_eyebrow">Your company</h4>
-              <input
-                id="talk_company"
-                name="userCompany"
-                type="text"
-                placeholder="| Your company."
-              />
-              <h4 class="talk_message_eyebrow">
-                Let us know what you're looking for and how we can help.
-              </h4>
-              <textarea
-                id="talk_message"
-                name="userMessage"
-                cols="30"
-                rows="10"
-                placeholder="Let us know what you're looking for and how we can help."
-              ></textarea>
+              <div class="talk_input_wrap">
+                <h4 class="talk_name_eyebrow">Your name</h4>
+                <input
+                  id="talk_name"
+                  name="userName"
+                  type="text"
+                  placeholder="| Your name."
+                  onfocus="talkFocus(0)"
+                  onblur="talkBlur(0)"
+                  oninput="talkChange(0)"
+                />
+                <h4 class="talk_name_require">This is required</h4>
+              </div>
+
+              <div class="talk_input_wrap">
+                <h4 class="talk_email_eyebrow">Your email</h4>
+                <input
+                  id="talk_email"
+                  name="userEmail"
+                  type="email"
+                  placeholder="| Your email."
+                  onfocus="talkFocus(1)"
+                  onblur="talkBlur(1)"
+                  oninput="talkChange(1)"
+                />
+                <h4 class="talk_email_require">This is required</h4>
+              </div>
+
+              <div class="talk_input_wrap">
+                <h4 class="talk_company_eyebrow">Your company</h4>
+                <input
+                  id="talk_company"
+                  name="userCompany"
+                  type="text"
+                  placeholder="| Your company."
+                  onfocus="talkFocus(2)"
+                  onblur="talkBlur(2)"
+                  onchange="talkChange(2)"
+                />
+                <h4 class="talk_company_require">This is required</h4>
+              </div>
+
+              <div class="talk_input_wrap">
+                <h4 class="talk_message_eyebrow">
+                  Let us know what you're looking for and how we can help.
+                </h4>
+                <textarea
+                  id="talk_message"
+                  name="userMessage"
+                  cols="30"
+                  rows="10"
+                  placeholder="Let us know what you're looking for and how we can help."
+                  onfocus="talkFocus(3)"
+                  onblur="talkBlur(3)"
+                  onchange="talkChange(3)"
+                ></textarea>
+                <h4 class="talk_message_require">This is required</h4>
+              </div>
+
               <p class="talk_notice">
                 Please read our <a>Privacy Policy</a> to see how we use your
                 personal information.
               </p>
-              <button id="talk_send_btn" type="submit">Send message</button>
+              <button id="talk_send_btn" type="button" onclick="talkSend()">Send message</button>
             </form>
           </div>
         </div>
@@ -161,13 +188,162 @@
 
       var titleI = setInterval(titleChange, 1000);
 
-      // Talk Form
-      function talkInputFocus(target) {
-        document.getElementsByClassName("talk_name_eyebrow")[
-          target
-        ].style.display = "block";
-        document.getElementById("talk_name").placeholder = "";
+      // Talk Form Focus
+      // 초점이 잡힐 때 Focus고 벗어나는 이벤트는 Blur/ 값이 변경되는 건 Change
+      function talkFocus(target) {
+
+        if (target == 0) {
+          document.getElementsByClassName("talk_name_eyebrow")[0].style.display = "block";
+          document.getElementsByClassName("talk_name_eyebrow")[0].style.color = "#3a97f5";
+          document.getElementById("talk_name").placeholder = "";
+        }
+        
+        else if (target == 1) {
+          document.getElementsByClassName("talk_email_eyebrow")[0].style.display = "block";
+          document.getElementsByClassName("talk_email_eyebrow")[0].style.color = "#3a97f5";
+          document.getElementById("talk_email").placeholder = "";
+        }
+
+        else if (target == 2) {
+          document.getElementsByClassName("talk_company_eyebrow")[0].style.display = "block";
+          document.getElementsByClassName("talk_company_eyebrow")[0].style.color = "#3a97f5";
+          document.getElementById("talk_company").placeholder = "";
+        }
+
+        else {
+          document.getElementsByClassName("talk_message_eyebrow")[0].style.display = "block";
+          document.getElementsByClassName("talk_message_eyebrow")[0].style.color = "#3a97f5";
+          document.getElementById("talk_message").placeholder = "";
+        }
       }
+
+      // Talk Form Blur
+      // 초점이 잡힐 때 Focus고 벗어나는 이벤트는 Blur/ 값이 변경되는 건 Change
+      function talkBlur(target) {
+
+        if (target == 0) {
+
+          if (document.getElementById("talk_name").value == "") {
+            document.getElementsByClassName("talk_name_eyebrow")[0].style.display = "none";
+            document.getElementById("talk_name").placeholder = "| Your name.";
+          } // if close
+
+          else {
+            document.getElementsByClassName("talk_name_eyebrow")[0].style.color = "rgb(0,0,0)";
+          } // else close
+
+        }// if close
+
+        else if (target == 1) {
+
+          if (document.getElementById("talk_email").value == "") {
+            document.getElementsByClassName("talk_email_eyebrow")[0].style.display = "none";
+            document.getElementById("talk_email").placeholder = "| Your name.";
+          } // if close
+
+          else {
+            document.getElementsByClassName("talk_email_eyebrow")[0].style.color = "rgb(0,0,0)";
+          } // else close
+
+        }// else if close
+
+        else if (target == 2) {
+
+          if (document.getElementById("talk_company").value == "") {
+            document.getElementsByClassName("talk_company_eyebrow")[0].style.display = "none";
+            document.getElementById("talk_company").placeholder = "| Your name.";
+          } // if close
+
+          else {
+            document.getElementsByClassName("talk_company_eyebrow")[0].style.color = "rgb(0,0,0)";
+          } // else close
+
+        }// else if close
+        
+        else {
+
+            if (document.getElementById("talk_message").value == "") {
+              document.getElementsByClassName("talk_message_eyebrow")[0].style.display = "none";
+              document.getElementById("talk_message").placeholder = "| Your name.";
+            } // if close
+
+            else {
+              document.getElementsByClassName("talk_message_eyebrow")[0].style.color = "rgb(0,0,0)";
+            } // else close
+
+          }// else close
+
+      } // function close
+
+      // Talk Send Button
+      function talkSend() {
+
+        var isCheck = true;
+
+        // 사용자 입력 값에 문제가 있을 때
+
+        // Name 입력 값 체크
+        if ( document.getElementById("talk_name").value == "" ) {
+          document.getElementsByClassName("talk_name_require")[0].style.display = "block";
+          document.getElementById("talk_name").style.borderBottomColor = "#ea178c";
+          isCheck = false;
+        } // if close
+
+        if ( document.getElementById("talk_email").value == "" ) {
+          document.getElementsByClassName("talk_email_require")[0].style.display = "block";
+          document.getElementById("talk_email").style.borderBottomColor = "#ea178c";
+          isCheck = false;
+        } // if close
+
+        if ( document.getElementById("talk_company").value == "" ) {
+          document.getElementsByClassName("talk_company_require")[0].style.display = "block";
+          document.getElementById("talk_company").style.borderBottomColor = "#ea178c";
+          isCheck = false;
+        } // if close
+
+        if ( document.getElementById("talk_message").value == "" ) {
+          document.getElementsByClassName("talk_message_require")[0].style.display = "block";
+          document.getElementById("talk_message").style.borderColor = "#ea178c";
+          isCheck = false;
+        } // if close
+
+        // 사용자 입력 값이 모두 정상일 때
+        if ( isCheck ) {
+          document.getElementsByClassName("talk_right_title")[0].innerHTML = "Thanks for reaching out! We'll get back to you as soon as possible.";
+          document.getElementById("talk_form").style.display = "none";
+        } // if close
+
+        isCheck = true;
+      } // function close
+
+      // Talk Form Change
+      // 초점이 잡힐 때 Focus고 벗어나는 이벤트는 Blur/ 값이 변경되는 건 Change / 값을 입력하는 건 Input
+      function talkChange(target) {
+
+        // Input Event
+        if ( target == 0 && document.getElementById('talk_name').value.length > 1 ) {
+          document.getElementsByClassName('talk_name_require')[0].style.display = "none";
+          document.getElementById("talk_name").style.borderBottomColor = "rgba(0,0,0,0.6)";
+        } // if close
+
+        else if ( target == 1 && document.getElementById('talk_email').value.length > 1  ) {
+          document.getElementsByClassName('talk_email_require')[0].style.display = "none";
+          document.getElementById("talk_email").style.borderBottomColor = "rgba(0,0,0,0.6)";
+        } // else if close
+        
+        // Change Event
+        else if ( target == 2 ) {
+          document.getElementsByClassName('talk_company_require')[0].style.display = "none";
+          document.getElementById("talk_company").style.borderBottomColor = "rgba(0,0,0,0.6)";
+        } // else if close
+
+        else {
+          document.getElementsByClassName('talk_message_require')[0].style.display = "none";
+          document.getElementById("talk_message").style.borderColor = "rgba(0,0,0,0.6)";
+        } // else close
+
+      } // functio close
+
     </script>
   </body>
 </html>
