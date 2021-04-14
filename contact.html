@@ -153,6 +153,70 @@
           </div>
         </div>
       </section>
+
+      <!-- Office -->
+      <section id="office">
+        <ul class="office_wrap">
+          <li class="office_item">
+            <h3 class="office_name">Atlanta.</h3>
+            <h4 class="office_greeting">Ayee.</h4>
+            <p class="office_time">
+              <span id="atl_hour"></span>:
+              <span id="atl_minute"></span> 
+              <span id="atl_ampm"></span>
+            </p>
+            <p class="office_tel">+1 404 461 9025</p>
+            <p class="office_email">atl@hugeinc.com</p>
+            <div class="office_icon">
+              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
+              </svg>
+              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+              </svg>
+            </div>
+          </li>
+
+          <li class="office_item">
+            <h3 class="office_name">Bogotá.</h3>
+            <h4 class="office_greeting">Hola.</h4>
+            <p class="office_time">
+              <span id="bog_hour"></span>:
+              <span id="bog_minute"></span>
+            </p>
+            <p class="office_tel">+571 3810606</p>
+            <p class="office_email">bog@hugeinc.com</p>
+            <div class="office_icon">
+              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
+              </svg>
+              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+              </svg>
+            </div>
+          </li>
+
+          <li class="office_item">
+            <h3 class="office_name">Brooklyn.</h3>
+            <h4 class="office_greeting">Yo.</h4>
+            <p class="office_time">
+              <span id="bro_hour"></span>:
+              <span id="bro_minute"></span>
+            </p>
+            <p class="office_tel">+1 718 625 4843</p>
+            <p class="office_email">bk@hugeinc.com</p>
+            <div class="office_icon">
+              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
+              </svg>
+              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </section>
+
     </main>
 
     <footer></footer>
@@ -343,6 +407,45 @@
         } // else close
 
       } // functio close
+
+      // Ofiice Time
+
+      // 브라우저 날짜 Object 생성
+      var presentTime = new Date(); 
+
+      // 세계 표준 시 계산
+      var utcHour = presentTime.getUTCHours();
+      var utcMinute = presentTime.getUTCMinutes();
+
+      // 도시별 시간으로 계산
+      var atlHour = utcHour - 0 + 1;
+      var atlAmPm;
+
+      if ( atlHour < 0 ) { atlHour += 24; }; // 24시간제 시간 값
+
+      // AM PM 결정
+      if ( atlHour >=12 ) { atlAmPm = "PM" } else { atlAmPm = "AM" };
+
+      // 화면 색상 및 아이콘 변경
+      if ( atlHour >= 9 && atlHour <=18 ) {
+        document.getElementsByClassName('office_item')[0].style.backgroundColor = "rgb(255,255,255)";
+         document.getElementsByClassName('office_item')[0].style.color = "rgb(0,0,0)";
+         document.getElementsByClassName('icon_night')[0].style.display = "none";
+         document.getElementsByClassName('icon_day')[0].style.display = "block";
+      }
+      else { 
+            document.getElementsByClassName('office_item')[0].style.backgroundColor = "rgb(22,22,22)";
+            document.getElementsByClassName('icon_night')[0].style.display = "block";
+            document.getElementsByClassName('icon_day')[0].style.display = "none";
+      }
+
+      // 12시간제로 변경
+      if (atlHour > 12) { atlHour -= 12; }
+
+      // 도시별 시간을 화면에 표시
+      document.getElementById('atl_hour').innerHTML = atlHour;
+      document.getElementById('atl_minute').innerHTML = utcMinute;
+      document.getElementById('atl_ampm').innerHTML = atlAmPm;
 
     </script>
   </body>
