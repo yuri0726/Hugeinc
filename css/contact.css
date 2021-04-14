@@ -195,3 +195,43 @@
   margin: 5px 0 0;
   display: none;
 }
+
+/* Office CSS */
+#office {
+  padding: 100px 0 0;
+}
+.office_wrap {
+  width: 1712px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(22, 22, 22);
+}
+.office_item { 
+  width: 33.3333%;
+  padding: 115px 70px 30px;
+}
+.office_name { 
+  font-size: 44px;
+  font-weight: 900;
+  margin: 0 0 50px;
+}
+.office_greeting {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0 0 20px;
+}
+.office_time, .office_tel, .office_email {
+  font-family: serif;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+.office_icon {
+  text-align: right;
+}
+.office_item svg { 
+  width: 30px;
+  fill: rgb(255, 255, 255);
+}
