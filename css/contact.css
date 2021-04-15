@@ -26,17 +26,17 @@
 #hero_title {
   position: absolute;
   bottom: 100px;
-  left: 250px;
+  left: 12.65832%;
   font-size: 160px;
-  font-weight: 900;
-  letter-spacing: -10px;
+  font-weight: 700;
+  letter-spacing: normal;
 }
 
 
 /* Hello CSS */
 .hello_wrap {
-  width: 1440px;
-  padding: 140px 10px 0;
+  width: 74.68354%;
+  padding: 140px 0 0;
   margin: 0 auto 200px;
   display: flex;
 }
@@ -48,9 +48,9 @@
   border-top: 1px solid rgb(255, 255, 255);
   padding: 10px 0 0;
   font-size: 22px;
-  letter-spacing: -2px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 .hello_right {
   width: 66.6666%;
@@ -59,7 +59,7 @@
 }
 .hello_right_title {
   width: 100%;
-  font-family: serif;
+  font-family: Galaxie-Book;
   font-size: 56px;
   font-weight: 400;
   letter-spacing: -4px;
@@ -70,11 +70,11 @@
   margin: 100px 0 0;
 }
 .hello_right_content li {
-  font-family: serif;
-  font-size: 20px;
+  font-family: Galaxie-Book;
+  font-size: 18px;
   line-height: 34px;
   letter-spacing: -0.27504px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .hello_right_content li:first-child {
   margin: 0 0 40px;
@@ -87,8 +87,8 @@
   color: rgb(0, 0, 0);
 }
 .talk_wrap {
-  width: 1440px;
-  padding: 100px 10px;
+  width: 74.68354%;
+  padding: 100px 0;
   margin: 0 auto;
   display: flex;
 }
@@ -100,16 +100,16 @@
   width: 200px;
   padding: 10px 0 0;
   font-size: 22px;
-  letter-spacing: -2px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 .talk_right {
   width: 66.6666%;
 }
 .talk_right_title {
   width: 100%;
-  font-family: serif;
+  font-family: Galaxie-Book;
   font-size: 56px;
   font-weight: 400;
   letter-spacing: -4px;
@@ -128,7 +128,7 @@
   width: 100%;
   height: 48px;
   padding: 0 10px 17px;
-  font-family: serif;
+  font-family: Galaxie-Book;
   font-size: 22px;
   line-height: 22px;
   border: none;
@@ -143,7 +143,7 @@
 #talk_message {
   width: 100%;
   height: 96px;
-  font-family: serif;
+  font-family: Galaxie-Book;
   font-size: 22px;
   padding: 20px;
   border-radius: 0;
@@ -154,7 +154,7 @@
 }
 .talk_notice,
 .talk_notice a {
-  font-family: serif;
+  font-family: Galaxie-Book;
   font-size: 18px;
   color: rgb(128, 128, 128);
   margin: 0 0 48px;
@@ -165,21 +165,23 @@
 #talk_send_btn {
   width: 100%;
   height: 84px;
-  font-family: sans-serif;
-  font-size: 18px;
-  font-weight: 900;
+  font-family: HugeGothic-Bold;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: normal;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 0;
+  -webkit-font-smoothing: antialiased;
 }
 .talk_name_eyebrow,
 .talk_email_eyebrow,
 .talk_company_eyebrow,
 .talk_message_eyebrow {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
-  font-family: serif;
+  font-family: Galaxie-Book;
   color: #3a97f5;
   display: none;
 }
@@ -188,8 +190,8 @@
 .talk_email_require,
 .talk_company_require,
 .talk_message_require {
-  font-size: 16px;
-  font-family: serif;
+  font-size: 14px;
+  font-family: Galaxie-Book;
   color: #ea178c;
   line-height: 30px;
   margin: 5px 0 0;
@@ -198,40 +200,107 @@
 
 /* Office CSS */
 #office {
-  padding: 100px 0 0;
+  padding: 100px 0;
 }
 .office_wrap {
-  width: 1712px;
+  width: 89.87342%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(22, 22, 22);
 }
-.office_item { 
+.office_item {
+  position: relative;
   width: 33.3333%;
   padding: 115px 70px 30px;
+  border-right: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.office_item:nth-child(14),
+.office_item:nth-child(15) {
+  background-color: rgb(0, 0, 0);
 }
 .office_name { 
   font-size: 44px;
-  font-weight: 900;
+  font-weight: 400;
   margin: 0 0 50px;
+  letter-spacing: normal;
 }
 .office_greeting {
   font-size: 24px;
-  font-weight: 900;
+  line-height: 30px;
+  font-weight: 400;
   margin: 0 0 20px;
 }
 .office_time, .office_tel, .office_email {
-  font-family: serif;
+  font-family: Galaxie-Book;
   font-size: 18px;
   line-height: 34px;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: -0.275%;
+}
+.office_email {
+  height: 100px;
 }
 
 .office_icon {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  height: 35px;
   text-align: right;
 }
 .office_item svg { 
-  width: 30px;
+  width: 35px;
+  height: 35px;
   fill: rgb(255, 255, 255);
+}
+.office_item svg:last-child {
+  stroke: rgb(0, 0, 0);
+  stroke-width: 2px;
+}
+
+.office_item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.4s;
+}
+.office_item a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Magenta CSS */
+#magenta {
+  background-image: url(../img/magenta_bg_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.magenta_fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.magenta_wrap {
+  width: 74.68354%;
+  padding: 200px 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.magenta_left {
+  width: 25.42%;
+}
+.magenta_img { width: 100%; }
+
+.magenta_right {
+  width: 74.58%;
+  padding: 0 8.45%;
 }
