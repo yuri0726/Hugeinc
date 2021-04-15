@@ -1,9 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: HugeGothic-Bold; /* Huge San-serif 폰트 */
+  src: url(../font/HugeGothic-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: Galaxie-Book; /* Huge Serif 폰트 */
+  src: url(../font/GalaxieCopernicus-Book.woff) format("woff");
+}
 
 body {
-  font-family: "Noto Sans KR";
-  font-size: 16px;
-  font-weight: 400;
+  font-family: HugeGothic-Bold;
   color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   -webkit-font-smoothing: antialiased;
@@ -29,175 +35,29 @@ button:focus {
 }
 
 /* Text Style */
-h1 {
-  font-family: "Noto Sans KR";
-  font-size: 64px;
-  line-height: 1.2;
-  font-weight: 700;
-}
-h2 {
-  font-family: "Noto Sans KR";
-  font-size: 50px;
-  line-height: 1.2;
-  font-weight: 700;
-}
-h3 {
-  font-family: "Noto Sans KR";
-  font-size: 26px;
-  line-height: 1.2;
-  font-weight: 400;
-}
-h4 {
-  font-family: "Noto Sans KR";
-  font-size: 19.2px;
-  line-height: 1.2;
-  font-weight: 400;
-}
-p {
-  font-family: "Noto Sans KR";
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 400;
-}
+h1, h2, h3, h4, h5, h6 { font-family: HugeGothic-Bold; font-weight: 400;  -webkit-font-smoothing: antialiased;   }
 
-/* Tablet PC Landscape 가로 */
+p { font-family: Galaxie-Book; -webkit-font-smoothing: antialiased;  }
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
-  h1 {
-    font-family: "Noto Sans KR";
-    font-size: 50px;
-    line-height: 1.2;
-    font-weight: 700;
-  }
+h1 { font-size: 170px; line-height: 170px; }
+h2 { font-size: 80px; line-height: 84px; letter-spacing: -2px; }
+h3 { font-size: 56px; line-height: 70px; letter-spacing: -4px; }
+h4 { font-size: 44px; line-height: 46x;  }
+h5 { font-size: 24px; line-height: 24px;  }
+h6 { font-size: 22px; line-height: 22px;  }
 
-  h2 {
-    font-family: "Noto Sans KR";
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: 500;
-  }
+p { font-size: 18px; line-height: 34px; letter-spacing: -0.27504;}
 
-  h3 {
-    font-family: "Noto Sans KR";
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 400;
-  }
 
-  h4 {
-    font-family: "Noto Sans KR";
-    font-size: 19.2px;
-    line-height: 1.4;
-    font-weight: 400;
-  }
-}
+.h3_serif { font-family: Galaxie-Book;  font-size: 56px; line-height: 70px; letter-spacing: -4px; }
+.h4_sans { font-size: 44px; line-height: 44px; }
+.h5_sans { font-size: 24px; line-height: 30px; }
+.h6_sans { font-size: 44px; line-height: 44px; }
 
-/* Tablet PC Portrait 세로 */
+.p_small_1 { font-size: 16px; letter-spacing: -1px;}
+.p_small_2 { font-size: 12px; line-height: 22.6667px; letter-spacing: -0.27504px;}
+.p_small_sans { font-size: 14px; line-height: 20px;}
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  h1 {
-    font-family: "Noto Sans KR";
-    font-size: 50px;
-    line-height: 1.2;
-    font-weight: 700;
-  }
-
-  h2 {
-    font-family: "Noto Sans KR";
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: 500;
-  }
-
-  h3 {
-    font-family: "Noto Sans KR";
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: 400;
-  }
-
-  h4 {
-    font-family: "Noto Sans KR";
-    font-size: 19.2px;
-    line-height: 1.4;
-    font-weight: 400;
-  }
-}
-
-/* Mobile Landscape 가로 */
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  h1 {
-    font-family: "Noto Sans KR";
-    font-size: 28px;
-    line-height: 1.2;
-    font-weight: 700;
-  }
-
-  h2 {
-    font-family: "Noto Sans KR";
-    font-size: 26px;
-    line-height: 1.2;
-    font-weight: 500;
-  }
-
-  h3 {
-    font-family: "Noto Sans KR";
-    font-size: 18px;
-    line-height: 1.4;
-    font-weight: 400;
-  }
-
-  h4 {
-    font-family: "Noto Sans KR";
-    font-size: 16px;
-    line-height: 1.4;
-    font-weight: 400;
-  }
-
-  p {
-    font-family: "Noto Sans KR";
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: 400;
-  }
-}
-
-/* Mobile Portrait 세로 */
-
-@media only screen and (max-width: 479px) {
-  h1 {
-    font-family: "Noto Sans KR";
-    font-size: 28px;
-    line-height: 1.2;
-    font-weight: 700;
-  }
-
-  h2 {
-    font-family: "Noto Sans KR";
-    font-size: 26px;
-    line-height: 1.2;
-    font-weight: 500;
-  }
-
-  h3 {
-    font-family: "Noto Sans KR";
-    font-size: 18px;
-    line-height: 1.4;
-    font-weight: 400;
-  }
-
-  h4 {
-    font-family: "Noto Sans KR";
-    font-size: 16px;
-    line-height: 1.4;
-    font-weight: 400;
-  }
-
-  p {
-    font-family: "Noto Sans KR";
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: 400;
-  }
-}
+.h5_kr {font-family: 'Noto Sans KR', sans-serif; font-size: 20x; font-weight: 900;  line-height: 22px; }
+.h6_kr { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight:900; line-height: 18px; }
+.p_kr { font-family:  'Noto Sans KR', sans-serif; font-size: 18px; font-weight: 100; line-height: 18px;}
