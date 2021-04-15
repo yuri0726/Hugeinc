@@ -1,473 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/reset_hugeinc.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 
-    <title>Huge Inc - Contact</title>
-  </head>
-  <body>
-    <header>
-      <nav class="gnb">
-        <div class="gnb_logo_wrap">
-          <svg
-            class="gnb_logo"
-            viewBox="0 0 20 28"
-            xmlns="http://www.w3.org/2000/svg"
-            title="Menu"
-          >
-            <path
-              class="gnb-logo__path"
-              d="M35,24H28V51h7V41h6V51h7V24H41V34H35V24Z"
-              transform="translate(-28 -24)"
-            ></path>
-          </svg>
+  <link rel="stylesheet" href="css/reset_hugeinc.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+
+  <title>Huge Inc - Contact</title>
+</head>
+
+<body>
+  <header>
+    <nav class="gnb">
+      <div class="gnb_logo_wrap">
+        <svg class="gnb_logo" viewBox="0 0 20 28" xmlns="http://www.w3.org/2000/svg" title="Menu">
+          <path class="gnb-logo__path" d="M35,24H28V51h7V41h6V51h7V24H41V34H35V24Z" transform="translate(-28 -24)">
+          </path>
+        </svg>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero_wrap">
+        <h1 id="hero_title">Hello.</h1>
+      </div>
+    </section>
+
+    <!-- Hello -->
+    <section id="hello">
+      <div class="hello_wrap">
+        <div class="hello_left">
+          <h3 class="hello_left_index">Hello.</h3>
         </div>
-      </nav>
-    </header>
+        <div class="hello_right">
+          <h2 class="hello_right_title">We're here for you. Say hi.</h2>
+          <ul class="hello_right_content">
+            <li>Become a Client.</li>
+            <li>+1 718 618 4724</li>
+            <li><a href="">business@hugeinc.com</a></li>
+          </ul>
 
-    <main>
-      <!-- Hero -->
-      <section id="hero">
-        <div class="hero_wrap">
-          <h1 id="hero_title">Hello.</h1>
+          <ul class="hello_right_content">
+            <li>Media Inquiries.</li>
+            <li>+1 718 880 3724</li>
+            <li><a href="">press@hugeinc.com</a></li>
+          </ul>
+
+          <ul class="hello_right_content">
+            <li>Join Huge.</li>
+            <li>+1 718 625 4843</li>
+            <li><a href="">work@hugeinc.com</a></li>
+          </ul>
+
+          <ul class="hello_right_content">
+            <li>Everything Else.</li>
+            <li>+1 718 625 4843</li>
+            <li><a href="">hello@hugeinc.com</a></li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Hello -->
-      <section id="hello">
-        <div class="hello_wrap">
-          <div class="hello_left">
-            <h3 class="hello_left_index">Hello.</h3>
-          </div>
-          <div class="hello_right">
-            <h2 class="hello_right_title">We're here for you. Say hi.</h2>
-            <ul class="hello_right_content">
-              <li>Become a Client.</li>
-              <li>+1 718 618 4724</li>
-              <li><a href="">business@hugeinc.com</a></li>
-            </ul>
-
-            <ul class="hello_right_content">
-              <li>Media Inquiries.</li>
-              <li>+1 718 880 3724</li>
-              <li><a href="">press@hugeinc.com</a></li>
-            </ul>
-
-            <ul class="hello_right_content">
-              <li>Join Huge.</li>
-              <li>+1 718 625 4843</li>
-              <li><a href="">work@hugeinc.com</a></li>
-            </ul>
-
-            <ul class="hello_right_content">
-              <li>Everything Else.</li>
-              <li>+1 718 625 4843</li>
-              <li><a href="">hello@hugeinc.com</a></li>
-            </ul>
-          </div>
+    <!-- Let's Talk -->
+    <section id="talk">
+      <div class="talk_wrap">
+        <div class="talk_left">
+          <h3 class="talk_left_index">Let's talk.</h3>
         </div>
-      </section>
+        <div class="talk_right">
+          <h2 class="talk_right_title">We want to get to<br>know you.</h2>
+          <form action="" id="talk_form">
+            <div class="talk_input_wrap">
+              <h4 class="talk_name_eyebrow">Your name</h4>
+              <input id="talk_name" name="userName" type="text" placeholder="| Your name." onfocus="talkFocus(0)"
+                onblur="talkBlur(0)" oninput="talkChange(0)" />
+              <h4 class="talk_name_require">This is required</h4>
+            </div>
 
-      <!-- Let's Talk -->
-      <section id="talk">
-        <div class="talk_wrap">
-          <div class="talk_left">
-            <h3 class="talk_left_index">Let's talk.</h3>
+            <div class="talk_input_wrap">
+              <h4 class="talk_email_eyebrow">Your email</h4>
+              <input id="talk_email" name="userEmail" type="email" placeholder="| Your email." onfocus="talkFocus(1)"
+                onblur="talkBlur(1)" oninput="talkChange(1)" />
+              <h4 class="talk_email_require">This is required</h4>
+            </div>
+
+            <div class="talk_input_wrap">
+              <h4 class="talk_company_eyebrow">Your company</h4>
+              <input id="talk_company" name="userCompany" type="text" placeholder="| Your company."
+                onfocus="talkFocus(2)" onblur="talkBlur(2)" onchange="talkChange(2)" />
+              <h4 class="talk_company_require">This is required</h4>
+            </div>
+
+            <div class="talk_input_wrap">
+              <h4 class="talk_message_eyebrow">
+                Let us know what you're looking for and how we can help.
+              </h4>
+              <textarea id="talk_message" name="userMessage" cols="30" rows="10"
+                placeholder="Let us know what you're looking for and how we can help." onfocus="talkFocus(3)"
+                onblur="talkBlur(3)" onchange="talkChange(3)"></textarea>
+              <h4 class="talk_message_require">This is required</h4>
+            </div>
+
+            <p class="talk_notice">
+              Please read our <a>Privacy Policy</a> to see how we use your
+              personal information.
+            </p>
+            <button id="talk_send_btn" type="button" onclick="talkSend()">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office -->
+    <section id="office">
+      <ul class="office_wrap">
+
+        <!-- Office 1 ~ 3 -->
+        <li class="office_item">
+          <h3 class="office_name">Atlanta.</h3>
+          <h4 class="office_greeting">Ayee.</h4>
+          <p class="office_time">
+            <span id="atl_hour" class="city_hour"></span>:
+            <span id="atl_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+1 404 461 9025</p>
+          <p class="office_email">atl@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
           </div>
-          <div class="talk_right">
-            <h2 class="talk_right_title">We want to get to<br>know you.</h2>
-            <form action="" id="talk_form">
-              <div class="talk_input_wrap">
-                <h4 class="talk_name_eyebrow">Your name</h4>
-                <input
-                  id="talk_name"
-                  name="userName"
-                  type="text"
-                  placeholder="| Your name."
-                  onfocus="talkFocus(0)"
-                  onblur="talkBlur(0)"
-                  oninput="talkChange(0)"
-                />
-                <h4 class="talk_name_require">This is required</h4>
-              </div>
+          <a href="https://www.hugeinc.com/contact/atlanta"></a>
+        </li>
 
-              <div class="talk_input_wrap">
-                <h4 class="talk_email_eyebrow">Your email</h4>
-                <input
-                  id="talk_email"
-                  name="userEmail"
-                  type="email"
-                  placeholder="| Your email."
-                  onfocus="talkFocus(1)"
-                  onblur="talkBlur(1)"
-                  oninput="talkChange(1)"
-                />
-                <h4 class="talk_email_require">This is required</h4>
-              </div>
+        <li class="office_item">
+          <h3 class="office_name">Bogotá.</h3>
+          <h4 class="office_greeting">Hola.</h4>
+          <p class="office_time">
+            <span id="bog_hour" class="city_hour"></span>:
+            <span id="bog_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+571 3810606</p>
+          <p class="office_email">bog@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/bogota"></a>
+        </li>
 
-              <div class="talk_input_wrap">
-                <h4 class="talk_company_eyebrow">Your company</h4>
-                <input
-                  id="talk_company"
-                  name="userCompany"
-                  type="text"
-                  placeholder="| Your company."
-                  onfocus="talkFocus(2)"
-                  onblur="talkBlur(2)"
-                  onchange="talkChange(2)"
-                />
-                <h4 class="talk_company_require">This is required</h4>
-              </div>
+        <li class="office_item">
+          <h3 class="office_name">Brooklyn.</h3>
+          <h4 class="office_greeting">Yo.</h4>
+          <p class="office_time">
+            <span id="bro_hour" class="city_hour"></span>:
+            <span id="bro_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+1 718 625 4843</p>
+          <p class="office_email">bk@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/brooklyn"></a>
+        </li>
 
-              <div class="talk_input_wrap">
-                <h4 class="talk_message_eyebrow">
-                  Let us know what you're looking for and how we can help.
-                </h4>
-                <textarea
-                  id="talk_message"
-                  name="userMessage"
-                  cols="30"
-                  rows="10"
-                  placeholder="Let us know what you're looking for and how we can help."
-                  onfocus="talkFocus(3)"
-                  onblur="talkBlur(3)"
-                  onchange="talkChange(3)"
-                ></textarea>
-                <h4 class="talk_message_require">This is required</h4>
-              </div>
+        <!-- Office 4 ~ 6 -->
+        <li class="office_item">
+          <h3 class="office_name">Chicago.</h3>
+          <h4 class="office_greeting">Hey.</h4>
+          <p class="office_time">
+            <span id="chi_hour" class="city_hour"></span>:
+            <span id="chi_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+1 312 637 3150</p>
+          <p class="office_email">chi@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/chicago"></a>
+        </li>
 
-              <p class="talk_notice">
-                Please read our <a>Privacy Policy</a> to see how we use your
-                personal information.
+        <li class="office_item">
+          <h3 class="office_name">DC.</h3>
+          <h4 class="office_greeting">Hi.</h4>
+          <p class="office_time">
+            <span id="dc_hour" class="city_hour"></span>:
+            <span id="dc_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+1 202 350 4600</p>
+          <p class="office_email">dc@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/dc"></a>
+        </li>
+
+        <li class="office_item">
+          <h3 class="office_name">Detroit.</h3>
+          <h4 class="office_greeting">Whad'up.</h4>
+          <p class="office_time">
+            <span id="det_hour" class="city_hour"></span>:
+            <span id="det_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+1 248 731 0600</p>
+          <p class="office_email">det@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/detroit"></a>
+        </li>
+
+        <!-- Office 7 ~ 9 -->
+        <li class="office_item">
+          <h3 class="office_name">London.</h3>
+          <h4 class="office_greeting">'Ello.</h4>
+          <p class="office_time">
+            <span id="ldn_hour" class="city_hour"></span>:
+            <span id="ldn_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+ 44 (0)203 356 1900</p>
+          <p class="office_email">ldn@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/london"></a>
+        </li>
+
+        <li class="office_item">
+          <h3 class="office_name">Los Angeles.</h3>
+          <h4 class="office_greeting">E'yo.</h4>
+          <p class="office_time">
+            <span id="la_hour" class="city_hour"></span>:
+            <span id="la_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+1 310 499 7700</p>
+          <p class="office_email">la@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/los-angeles"></a>
+        </li>
+
+        <li class="office_item">
+          <h3 class="office_name">Medellín.</h3>
+          <h4 class="office_greeting">Buenas.</h4>
+          <p class="office_time">
+            <span id="mde_hour" class="city_hour"></span>:
+            <span id="mde_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+57 4 604 5535</p>
+          <p class="office_email">mde@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/medellin"></a>
+        </li>
+
+        <!-- Office 10 ~ 13 -->
+        <li class="office_item">
+          <h3 class="office_name">Oakland.</h3>
+          <h4 class="office_greeting">Sup.</h4>
+          <p class="office_time">
+            <span id="oak_hour" class="city_hour"></span>:
+            <span id="oak_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+1 510 735 0700</p>
+          <p class="office_email">oak@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/oakland"></a>
+        </li>
+
+        <li class="office_item">
+          <h3 class="office_name">Singapore.</h3>
+          <h4 class="office_greeting">你好</h4>
+          <p class="office_time">
+            <span id="sgp_hour" class="city_hour"></span>:
+            <span id="sgp_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+65 6303 0592</p>
+          <p class="office_email">sgp@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/singapore"></a>
+        </li>
+
+        <li class="office_item">
+          <h3 class="office_name">Toronto.</h3>
+          <h4 class="office_greeting">Eh?</h4>
+          <p class="office_time">
+            <span id="to_hour" class="city_hour"></span>:
+            <span id="to_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+1 416 800 0466</p>
+          <p class="office_email">to@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/toronto"></a>
+        </li>
+
+        <li class="office_item">
+          <h3 class="office_name">Tokyo.</h3>
+          <h4 class="office_greeting">こんにちは</h4>
+          <p class="office_time">
+            <span id="tyo_hour" class="city_hour"></span>:
+            <span id="tyo_minute" class="city_minute"></span>
+            <span id="atl_ampm" class="city_ampm"></span>
+          </p>
+          <p class="office_tel">+81 3 4577 7930</p>
+          <p class="office_email">tyo@hugeinc.com</p>
+          <div class="office_icon">
+            <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <g class="time-sign__night">
+                <path
+                  d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z">
+                </path>
+              </g>
+            </svg>
+            <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+              <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+            </svg>
+          </div>
+          <a href="https://www.hugeinc.com/contact/tokyo"></a>
+        </li>
+
+        <li class="office_item"></li>
+        <li class="office_item"></li>
+
+      </ul>
+    </section>
+
+    <!-- Magenta -->
+    <section id="magenta">
+      <div class="magenta_fill">
+        <div class="magenta_wrap">
+          <div class="magenta_left">
+            <a href="https://magenta.as/">
+              <img class="magenta_img" src="img/magenta-hero.gif" alt="">
+            </a>
+          </div>
+          <div class="magenta_right">
+            <a href="https://magenta.as/if-you-build-it-they-will-not-come-eabbe72f6dd9">
+              <h2 class="magenta_title">
+                Should Logo Designers Fear the Internet’s Id?
+              </h2>
+              <p class="magenta_detail">
+                When a company rebrands, one thing nearly always follows: backlash. But can designers always avoid the
+                criticism? Should they?
               </p>
-              <button id="talk_send_btn" type="button" onclick="talkSend()">Send message</button>
-            </form>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Office -->
-      <section id="office">
-        <ul class="office_wrap">
+  </main>
 
-          <!-- Office 1 ~ 3 -->
-          <li class="office_item">
-            <h3 class="office_name">Atlanta.</h3>
-            <h4 class="office_greeting">Ayee.</h4>
-            <p class="office_time">
-              <span id="atl_hour" class="city_hour"></span>:
-              <span id="atl_minute" class="city_minute"></span> 
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+1 404 461 9025</p>
-            <p class="office_email">atl@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/atlanta"></a>
-          </li>
+  <footer>
+    <div class="footer_wrap">
+      <div class="footer_left">
+        <a href="" class="huge_logo">
+          <svg class="huge-logo__svg" viewBox="0 0 60 24" xmlns="http://www.w3.org/2000/svg" title="Huge"><path d="M8.112.048v9.936H4.128V.048H.144v23.856h3.984v-9.936h3.984v9.936h3.984V.048H8.112"></path><path d="M24.096.048V18.96c0 .528-.432 1.008-1.008 1.008h-2.016c-.528 0-1.008-.432-1.008-1.008V.048h-3.936v19.92c0 2.208 1.776 3.984 3.984 3.984h3.984c2.208 0 3.984-1.776 3.984-3.984V.048h-3.984"></path><path d="M60 4.032V.048H48.048v23.856H60V19.92h-7.968v-5.952h3.984V9.984h-3.984V4.032H60"></path><path d="M44.016 6.048V4.032c0-2.208-1.776-3.984-3.984-3.984h-3.984c-2.208 0-3.984 1.776-3.984 3.984v15.936c0 2.208 1.776 3.984 3.984 3.984h3.984c2.208 0 3.984-1.776 3.984-3.984v-9.936h-5.952v3.984h2.016v4.944c0 .528-.432 1.008-1.008 1.008h-2.016c-.528 0-1.008-.432-1.008-1.008V5.04c0-.528.432-1.008 1.008-1.008h2.016c.528 0 1.008.432 1.008 1.008v1.008h3.936"></path></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-          <li class="office_item">
-            <h3 class="office_name">Bogotá.</h3>
-            <h4 class="office_greeting">Hola.</h4>
-            <p class="office_time">
-              <span id="bog_hour" class="city_hour"></span>:
-              <span id="bog_minute"  class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+571 3810606</p>
-            <p class="office_email">bog@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/bogota"></a>
-          </li>
+  <script src="js/contact.js"></script>
+</body>
 
-          <li class="office_item">
-            <h3 class="office_name">Brooklyn.</h3>
-            <h4 class="office_greeting">Yo.</h4>
-            <p class="office_time">
-              <span id="bro_hour" class="city_hour"></span>:
-              <span id="bro_minute" class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+1 718 625 4843</p>
-            <p class="office_email">bk@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/brooklyn"></a>
-          </li>
-
-          <!-- Office 4 ~ 6 -->
-          <li class="office_item">
-            <h3 class="office_name">Chicago.</h3>
-            <h4 class="office_greeting">Hey.</h4>
-            <p class="office_time">
-              <span id="chi_hour" class="city_hour"></span>:
-              <span id="chi_minute" class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+1 312 637 3150</p>
-            <p class="office_email">chi@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/chicago"></a>
-          </li>
-
-          <li class="office_item">
-            <h3 class="office_name">DC.</h3>
-            <h4 class="office_greeting">Hi.</h4>
-            <p class="office_time">
-              <span id="dc_hour" class="city_hour"></span>:
-              <span id="dc_minute" class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+1 202 350 4600</p>
-            <p class="office_email">dc@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/dc"></a>
-          </li>
-
-          <li class="office_item">
-            <h3 class="office_name">Detroit.</h3>
-            <h4 class="office_greeting">Whad'up.</h4>
-            <p class="office_time">
-              <span id="det_hour" class="city_hour"></span>:
-              <span id="det_minute" class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+1 248 731 0600</p>
-            <p class="office_email">det@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/detroit"></a>
-          </li>
-
-          <!-- Office 7 ~ 9 -->
-          <li class="office_item">
-            <h3 class="office_name">London.</h3>
-            <h4 class="office_greeting">'Ello.</h4>
-            <p class="office_time">
-              <span id="ldn_hour" class="city_hour"></span>:
-              <span id="ldn_minute" class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+ 44 (0)203 356 1900</p>
-            <p class="office_email">ldn@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/london"></a>
-          </li>
-
-          <li class="office_item">
-            <h3 class="office_name">Los Angeles.</h3>
-            <h4 class="office_greeting">E'yo.</h4>
-            <p class="office_time">
-              <span id="la_hour" class="city_hour"></span>:
-              <span id="la_minute" class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+1 310 499 7700</p>
-            <p class="office_email">la@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/los-angeles"></a>
-          </li>
-
-          <li class="office_item">
-            <h3 class="office_name">Medellín.</h3>
-            <h4 class="office_greeting">Buenas.</h4>
-            <p class="office_time">
-              <span id="mde_hour" class="city_hour"></span>:
-              <span id="mde_minute" class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+57 4 604 5535</p>
-            <p class="office_email">mde@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/medellin"></a>
-          </li>
-
-          <!-- Office 10 ~ 13 -->
-          <li class="office_item">
-            <h3 class="office_name">Oakland.</h3>
-            <h4 class="office_greeting">Sup.</h4>
-            <p class="office_time">
-              <span id="oak_hour" class="city_hour"></span>:
-              <span id="oak_minute" class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+1 510 735 0700</p>
-            <p class="office_email">oak@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/oakland"></a>
-          </li>
-
-          <li class="office_item">
-            <h3 class="office_name">Singapore.</h3>
-            <h4 class="office_greeting">你好</h4>
-            <p class="office_time">
-              <span id="sgp_hour" class="city_hour"></span>:
-              <span id="sgp_minute" class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+65 6303 0592</p>
-            <p class="office_email">sgp@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/singapore"></a>
-          </li>
-
-          <li class="office_item">
-            <h3 class="office_name">Toronto.</h3>
-            <h4 class="office_greeting">Eh?</h4>
-            <p class="office_time">
-              <span id="to_hour" class="city_hour"></span>:
-              <span id="to_minute" class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+1 416 800 0466</p>
-            <p class="office_email">to@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/toronto"></a>
-          </li>
-
-          <li class="office_item">
-            <h3 class="office_name">Tokyo.</h3>
-            <h4 class="office_greeting">こんにちは</h4>
-            <p class="office_time">
-              <span id="tyo_hour" class="city_hour"></span>:
-              <span id="tyo_minute" class="city_minute"></span>
-              <span id="atl_ampm" class="city_ampm"></span>
-            </p>
-            <p class="office_tel">+81 3 4577 7930</p>
-            <p class="office_email">tyo@hugeinc.com</p>
-            <div class="office_icon">
-              <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
-              </svg>
-              <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
-                <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
-              </svg>
-            </div>
-            <a href="https://www.hugeinc.com/contact/tokyo"></a>
-          </li>
-
-          <li class="office_item"></li>
-          <li class="office_item"></li>
-
-        </ul>
-      </section>
-
-      <!-- Magenta -->
-      <section id="magenta">
-        <div class="magenta_fill">
-          <div class="magenta_wrap">
-            <div class="magenta_left">
-              <a href="https://magenta.as/">
-                <img class="magenta_img" src="img/magenta-hero.gif" alt="">
-              </a>
-            </div>
-            <div class="magenta_right">
-              <a href="https://magenta.as/if-you-build-it-they-will-not-come-eabbe72f6dd9">
-                <h2 class="magenta_title">
-                  Should Logo Designers Fear the Internet’s Id?
-                </h2>
-                <p class="magenta_detail">
-                  When a company rebrands, one thing nearly always follows: backlash. But can designers always avoid the criticism? Should they?
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <footer></footer>
-
-    <script src="js/contact.js"></script>
-  </body>
 </html>
