@@ -1,3 +1,4 @@
+/* GNB Logo CSS */
 .gnb_logo_wrap {
   position: fixed;
   top: 50px;
@@ -7,6 +8,8 @@
   height: 74px;
   background-color: rgb(255, 255, 255);
   z-index: 1000;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 .gnb_logo {
   position: absolute;
@@ -15,7 +18,109 @@
   transform: translate(-50%, -50%);
   width: 24px;
   height: 28px;
+  transition: all 0.2s;
 }
+.gnb_logo_huge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 28px;
+  fill: rgb(234, 23, 140);
+  transition: all 0.2s;
+  display: none;
+}
+#gnb_window {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: -1;
+  border: 0px solid rgb(244, 244, 244);
+  border-top: 0px solid rgb(244, 244, 244);
+  transition: border 0.2s, top 0.4s;
+}
+
+
+
+/* 펼쳐진 네비게이션 */
+#gnb_wide {
+  width: 100%;
+  height: 440px;
+  position: fixed;
+  top: -440px;
+  left: 0;
+  z-index: 150;
+  background-color: rgb(244, 244, 244);
+  padding: 175px 0 0 0;
+  transition: all 0.4s;
+}
+.gnb_wide_menu {
+  width: 1050px;
+  display: flex;
+  margin: 0 auto;
+}
+.gnb_wide_item {
+  width: 190px;
+  margin: 0 10px;
+}
+.gnb_wide_item a:hover > h3 {
+  color: rgb(234, 23, 140);
+}
+.gnb_wide_item h3 {
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  transition: all 0.4s;
+}
+.gnb_wide_item p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.65px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin: 4px 0 35px;
+}
+.gnb_wide_item span {
+  display: block;
+  width: 48px;
+  height: 1px;
+  background-color: rgb(0,0,0);
+  margin: 0 auto;
+}
+.gnb_wide_foot {
+  text-align: center;
+  margin: 75px 0 0;
+}
+.gnb_wide_foot p {
+  font-size: 14px;
+  letter-spacing: -0.65px;
+  color: rgb(0, 0, 0);
+}
+.gnb_wide_foot a {
+  font-family: HugeGothic-Bold;
+  font-size: 16px;
+  letter-spacing: normal;
+  color: rgb(0, 0, 0);
+  vertical-align: middle;
+  transition: all 0.2s;
+}
+.gnb_wide_foot a:hover {
+  color: rgb(234, 23, 140);
+}
+.gnb_wide_foot span {
+  color: rgb(234, 23, 140);
+}
+
+
+
+
+/* Hero CSS */
 .hero_wrap {
   position: relative;
   width: 100%;
@@ -30,14 +135,19 @@
   font-size: 160px;
   font-weight: 700;
   letter-spacing: normal;
+  color: rgb(255, 255, 255);
 }
 
 
 /* Hello CSS */
+#hello {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
 .hello_wrap {
   width: 74.68354%;
-  padding: 140px 0 0;
-  margin: 0 auto 200px;
+  padding: 140px 0 200px;
+  margin: 0 auto;
   display: flex;
 }
 .hello_left {
@@ -82,10 +192,6 @@
 
 
 /* Let's Talk CSS */
-#talk {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
 .talk_wrap {
   width: 74.68354%;
   padding: 100px 0;
@@ -201,6 +307,7 @@
 /* Office CSS */
 #office {
   padding: 100px 0;
+  background-color: rgb(0, 0, 0);
 }
 .office_wrap {
   width: 89.87342%;

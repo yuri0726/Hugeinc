@@ -1,5 +1,6 @@
 footer {
-   margin: 115px 0 0;
+   background-color: rgb(0, 0, 0);
+   padding: 115px 0 0;
 }
 
 .footer_wrap {
@@ -43,6 +44,7 @@ footer {
 .make-something__svg {
    width: 246px;
    vertical-align: middle;
+   fill: rgb(255, 255, 255);
 }
 
 .footer_right {
