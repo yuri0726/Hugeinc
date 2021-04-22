@@ -8,7 +8,7 @@
   height: 74px;
   background-color: rgb(255, 255, 255);
   z-index: 1000;
-  transition: all 0.2s;
+  transition: background-color 0.2s, top 0.5s, opacity 0.5s;
   cursor: pointer;
 }
 .gnb_logo {
