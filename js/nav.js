@@ -76,3 +76,33 @@ function gnbWideOpen() {
    } // else close
 
 } // function close
+
+
+
+// 로고 스크롤 구현
+var bodyScrollTop = window.pageYOffset; // 현재 스크롤 값
+var bodyScrollTopPrev = 0; // 이전 스크롤탑 값
+var scrollDirection = bodyScrollTop - bodyScrollTopPrev;
+
+function logoShow() {
+
+   // bodyScrollTop값을 갱신해 줌.
+   bodyScrollTop = window.pageYOffset;
+
+   // 스크롤 이벤트 방향 확인 (0보다 크면 아래로, 0보다 작으면 위로 스크롤)
+   scrollDirection = bodyScrollTop - bodyScrollTopPrev;
+
+
+   if ( bodyScrollTop > 100 && scrollDirection > 0 && navOpenState == false) {
+      gnbLogoWrap.style.top = "-100px";
+      gnbLogoWrap.style.opacity = "0";
+   } // if close
+   else {
+      gnbLogoWrap.style.top = "50px";
+      gnbLogoWrap.style.opacity = "1";
+   } // else close
+
+   // 마지막 순간에 이전 값을 현재 값으로 저장
+   bodyScrollTopPrev = bodyScrollTop;
+
+} // function close
